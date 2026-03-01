@@ -1,0 +1,113 @@
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0fdfa; 
+  padding-top: 80px;
+}
+
+.profile-glass-card {
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 128, 128, 0.1);
+  text-align: center;
+}
+
+.avatar-circle {
+  width: 80px; height: 80px;
+  background: linear-gradient(135deg, #008080, #20b2aa);
+  color: white; border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; font-weight: bold;
+}
+
+.account-badge {
+  display: inline-block;
+  margin: 20px;
+  background: #e0f2f1;
+  color: #008080;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 12px; font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info-box {
+  text-align: left;
+  background: #f9fdfd;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e2efee;
+}
+
+.info-box label, .field label {
+  font-size: 12px; color: #666; font-weight: 600;
+}
+
+.info-box p { font-size: 17px; color: #333; margin-top: 5px; font-weight: 500; }
+
+.edit-toggle-btn {
+  width: 100%;
+  background: #008080;
+  color: white; border: none;
+  padding: 14px; border-radius: 10px;
+  font-weight: 700; cursor: pointer;
+  transition: 0.3s; margin-top: 10px;
+}
+
+.field { text-align: left; margin-bottom: 15px; }
+.field input {
+  width: 100%; padding: 12px;
+  border: 2px solid #eef2f2; border-radius: 10px;
+  margin-top: 5px; outline: none;
+}
+
+.field input:focus { border-color: #008080; }
+
+.save-btn {
+  flex: 2; background: #008080; color: white;
+  border: none; padding: 12px; border-radius: 10px;
+  font-weight: 700; cursor: pointer;
+}
+
+.cancel-btn {
+  flex: 1; background: #f1f5f9; color: #64748b;
+  border: none; padding: 12px; border-radius: 10px;
+  font-weight: 600; cursor: pointer; margin-left: 10px;
+}
+.cancel-btn:hover{
+  background: #a72d2d;
+  color: #e0f2f1;
+}
+
+.btn-group { display: flex; margin-top: 20px; }
+
+.animate-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.update-password{
+  text-decoration: none;
+  color: #333;
+
+}
+
+.update-password:hover{
+  color: #e26e20;
+  text-decoration: none;
+}
+.navigate-edit{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

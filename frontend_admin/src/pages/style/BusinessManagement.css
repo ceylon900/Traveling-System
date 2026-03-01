@@ -1,0 +1,70 @@
+.view-biz-btn {
+  background: #0f172a;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.view-biz-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.biz-modal {
+  background: white;
+  width: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+}
+
+.biz-modal-header {
+  background: #3b82f6;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.biz-tag {
+  background: rgba(255,255,255,0.2);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.biz-modal-body { padding: 20px; color: #334155; }
+.info-row { margin-bottom: 12px; font-size: 0.95rem; }
+.info-row strong { color: #1e293b; display: inline-block; width: 100px; }
+
+.biz-modal-footer {
+  padding: 15px 20px;
+  background: #f8fafc;
+  display: flex;
+  gap: 10px;
+}
+
+.suspend-action-btn {
+  flex: 2;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #f87171;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-action-btn {
+  flex: 1;
+  background: #e2e8f0;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,111 @@
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+              url('https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+
+.auth-container h2 {
+  color: #00f2fe;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.auth-container form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.6s ease-out;
+}
+
+.auth-container input {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.auth-container input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.auth-container input:focus {
+  border-color: #00f2fe;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+.auth-container button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(58, 123, 213, 0.4);
+}
+
+.auth-container .link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.auth-container .link a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.auth-container .link a:hover {
+  color: #00f2fe;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-container select {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}

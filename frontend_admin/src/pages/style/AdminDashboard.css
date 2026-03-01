@@ -1,0 +1,138 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 260px;
+  background: #1e293b;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #3b82f6;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav li {
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #94a3b8;
+}
+
+.sidebar nav li.active, .sidebar nav li:hover {
+  background: #334155;
+  color: white;
+}
+
+.logout-link {
+  margin-top: auto;
+  background: #ef4444;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.top-bar {
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.stat-info h3 {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.stat-info p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 5px 0 0;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.u-icon { background: #eff6ff; }
+.p-icon { background: #fef2f2; }
+.r-icon { background: #f0fdf4; }
+
+/* Table Styling */
+.recent-activity {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 2px solid #f1f5f9;
+  color: #64748b;
+}
+
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.badge-active {
+  background: #dcfce7;
+  color: #166534;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
